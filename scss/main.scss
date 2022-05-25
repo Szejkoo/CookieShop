@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+nav {
+	text-transform: uppercase;
+	transition: background-color 0.6s;
+	z-index: 1;
+	.nav-link,
+	i {
+		color: white;
+	}
+	.navbar-brand {
+		color: white;
+		font-weight: bold;
+	}
+}
+header {
+	color: white;
+
+	h1,
+	p {
+		text-transform: uppercase;
+	}
+
+	.hero-img {
+		position: relative;
+		height: 60vh;
+		background-image: url("../img/header-medium.jpg");
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: -10;
+	}
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 10px;
+		text-align: center;
+		z-index: 5;
+	}
+}
