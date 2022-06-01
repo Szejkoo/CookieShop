@@ -110,6 +110,16 @@ header {
 		transform: scale(1.04);
 	}
 }
+.team {
+	.row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.card {
+		border: none;
+	}
+}
 
 @media (min-width: 576px) {
 	.offer {

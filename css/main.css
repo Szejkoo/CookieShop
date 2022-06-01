@@ -131,6 +131,21 @@ header .hero-text {
           transform: scale(1.04);
 }
 
+.team .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.team .card {
+  border: none;
+}
+
 @media (min-width: 576px) {
   .offer .carousel-inner {
     width: 100%;
