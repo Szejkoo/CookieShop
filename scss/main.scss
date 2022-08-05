@@ -14,13 +14,16 @@ body {
 html {
 	scroll-behavior: smooth;
 }
+section {
+	scroll-margin-top: 50px;
+}
 .shadow-bg {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 nav {
 	text-transform: uppercase;
 	transition: background-color 0.6s;
-	z-index: 1;
+	z-index: 5;
 	background-color: rgba(0, 0, 0, 0.301);
 	.gold-text {
 		color: rgb(211, 179, 0);
@@ -120,12 +123,39 @@ header {
 		border: none;
 	}
 }
+.contact {
+	background-color: #333;
+	height: 150px;
+	width: 100%;
+	.container {
+		height: 150px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: column;
+		a {
+			transition: 0.3s;
+			text-decoration: none;
+			color: #fff;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		a:hover {
+			color: rgb(211, 179, 0);
+		}
+	}
+}
 
 @media (min-width: 576px) {
 	.offer {
 		.carousel-inner {
 			width: 100%;
 			height: 100%;
+		}
+	}
+	.contact {
+		.container {
+			flex-direction: row;
 		}
 	}
 }
